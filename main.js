@@ -1,5 +1,5 @@
 let counter = 1;
-let tickSpeed = 1000;
+let tickSpeed = 500;
 let upgradeCost = 10;
 let counterUpgradeCost = 50;
 let counterUpgradeAmount = 1;
