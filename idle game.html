@@ -1,0 +1,81 @@
+<html>
+<head>
+  <title>Idle Game</title>
+  <style>
+    body {
+      background-color: darkred;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .font-24 {
+      font-size: 24px;
+      color: white;
+    }
+
+    #counter {
+      font-size: 72px;
+      font-weight: bold;
+      color: white;
+    }
+    #buttons {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    button {
+      font-size: 24px;
+      background-color: red;
+      border: none;
+      padding: 12px 24px;
+      cursor: pointer;
+      color: white;
+    }
+    #upgrade-cost {
+      font-size: 24px;
+      color: white;
+      margin-top: 12px;
+    }
+    #tick-time {
+      font-size: 24px;
+      color: white;
+      margin-top: 12px;
+    }
+    #current-counter-upgrade {
+      color: white;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div id="counter">0</div>
+  <div id="tick-time">Tick Speed: 1000ms</div>
+  <div id="buttons">
+    <div>
+      <div id="upgrade-cost">10</div>
+      <button id="tick-upgrade-button">Tick Upgrade <span id="upgrade-counter">10</span></button>
+    </div>
+    <div style="margin-left: 12px;">
+      <div id="counter-upgrade-cost" style="font-size: 24px; color: white; margin-top: 12px;">50</div>
+      <button id="counter-upgrade-button">Counter Upgrade</button>
+    </div>
+  </div>
+  <div id="current-counter-upgrade-container" class="font-24">
+    Current Tick Value: 
+    <span id="current-counter-upgrade" class="font-24">1</span>
+  </div>
+
+  <div>
+    <button id="save-button">Save</button>
+    <button id="load-button">Load</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
