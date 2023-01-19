@@ -1,4 +1,4 @@
-let counter = 500;
+let counter = 1;
 let tickSpeed = 1000;
 let upgradeCost = 10;
 let counterUpgradeCost = 50;
